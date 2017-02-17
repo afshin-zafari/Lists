@@ -1,2 +1,2 @@
 Write general notes
-write specific comments
+Write specific comments
