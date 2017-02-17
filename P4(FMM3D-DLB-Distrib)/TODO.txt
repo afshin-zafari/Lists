@@ -1,0 +1,61 @@
+* PUMA-FM
+	o Setup in Tintin
+	o Problem setup
+* Read Problem Setup from file
+	o Read points
+	o Construct tree
+	o Read operators
+* New gemv functions for Si handles
+	o WITH_DUCTTEIP compile flag
+	o WITH_DLB compile flag
+	o Si owner, child index, offset from first member in level
+* Partitioning ? 
+o DuctTeip changes
+	* DTData <--SGMatrix
+	* glbCtx.Data <-- DTData
+	* Turn off mem alloc / mem pool in ductteip
+	* Set memory info for data : addr, Len, leading dim
+	* GetContentAddr and getHeaderAddr to be changed
+	* FMMContext
+	* runKernels: t->run
+	* DTData
+	* Optim Comm
+	* Task type, 
+		* Arg 1: M2M/T, index
+		* Arg 2: S/O, Level, group
+		* Arg 3: S/O, Level, group
+	* Task pack/unpack
+	* SGTaskGemv <-- received task
+	* getDatabyhandle-->use vector vs. list search
+	* when data received, if current version is being used, the data to be copied to a spare memory
+	* Unit Tests
+		o Simple Problem setup
+			* Tree is ok: L, #groups in l, groups in l
+			* Operators are ok, M,T,V : #,MxN , 
+			* sum(abs(M read)) = sum(abs(M expectd))
+			* Points in boxes are ok #Box, #Pi in Bi
+			* Charges are initialzed ok : #X, sum(abs(Xi))=sum(abs(X exp))
+		o Si Oj ownership Works
+		o Task ownership works 
+		o Send and receive data work
+		o Export import task works
+	o Migrated task runs ok
+	o Near field works
+	o Far field works
+	o DLB works
+		* Points or Box distribution?
+		* Input Parameters
+	o DLB
+	o Box min size , L 
+	o Profiling
+	o Output files
+		* Outputs
+			o Work , Comm, Data Memory per process/core
+	o DLB profile
+		* Silent mode: #, sum 
+		* Idle time: trace, sum
+		* Busy time: trace , sum 
+		* exported: sum, trace
+		* imported: trace, sum 
+		* optim migration: #, sum
+		* descrepancy measure: trace

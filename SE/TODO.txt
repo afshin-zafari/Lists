@@ -1,0 +1,34 @@
+Headers 
+	.h						   
+	no fwd decl						   
+	include order	Related	C	C++	other libs	my proj	   
+	namespace						   
+	no using namespace xxxx						   
+	terminate with comments							   
+	glolbal func's in namespaces						   
+	no global func's 						      
+	static class type forbidden	b'cos undefined order of ctor dtor					   
+	they should be plain old data types
+	file names
+	variable names
+	namespace
+	function names
+SRC
+	namespace
+	local var's defined close to usage						   
+	all to be initialized	
+	c++ casts, not x = (type) y;
+Unit Tests
+	git clone gtest
+	build gtest
+	test one
+	1st test: DuctTeip and MPI	
+Doxygen
+	create config file
+	git push it
+	add comments for modules
+	add comments for variables
+	add comments for functions
+	add comments for bodies
+		
+		

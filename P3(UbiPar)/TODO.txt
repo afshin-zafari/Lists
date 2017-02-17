@@ -1,0 +1,50 @@
+StarPU
+	Kebnekaise Run Script
+	Check a GPU sample from StarPU
+	StarPU
+		How to define both CPU/GPU kernels in StarPU
+		Run a test
+	SPU Scheduler 
+		Data Define
+		Partition Define
+		Partition Cascade
+		Partition Data
+		Task Define 
+		Task Submit
+		Task Run
+		Task Finished
+Cloud
+	Smog
+		Run instance in the cloud
+		Install, run & configure MQRabbit
+		Script for making the MQRabbit server
+		Python script for simulating message send/receive
+		Git clone, compile, run C++ UTP-MQ
+		Run Test Suite for Messages of:
+			Data Define
+			Partition Define
+			Partition Cascade
+			Partition Data
+			Task Define 
+			Task Submit
+			Task Run
+			Task Finished	
+	TinTin
+		Port MQScheduler code to UTP 
+		Script for making the MQRabbit client
+		Pack Test Messages of:
+			Data Define
+			Partition Define
+			Partition Cascade
+			Partition Data
+			Task Define 
+			Task Submit
+			Task Run
+			Task Finished
+	Kebnekaise
+		Git/clone UTP code
+		Run test package
+	Rackham
+		BLAS library = MKL
+
+

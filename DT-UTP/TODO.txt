@@ -1,0 +1,15 @@
+DT Changes
+	* MPICOmm static
+	* #SUBTASK to be in the config options
+	* Task Cancellation
+	* 2 x 3 x 5 , 3rd level for decrease run-time overhead
+		o Memory  alloc in user program, not in engine
+		o Partitioning should be made easier
+	* Post receive
+	* getDataByHandler() uses vector not list
+	* MPI_DATA_TYPE for data
+UTP Changes
+	* SHORTCUT=0 to be removed
+	* Main_* --> main.cpp
+	* MQ Scheduler
+		o Task submission flow

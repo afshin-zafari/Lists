@@ -1,0 +1,22 @@
+* Applications
+	o FMM 
+* Improving descriptions
+* Rackham
+	o Install
+		* PaRSEC
+		* StarPU
+	o Copy files
+		* PaRSEC
+		* StarPU
+		* ScaLAPACK
+		* DuctTeipp
+		* SuperGlue
+		* Experiments scripts
+	o Compile codes
+		* PaRSEC
+		* StarPU
+		* ScaLAPACK
+		* DT
+		* Icc , intel mkl intel mpi
+	o Change run scripts for R account and folders
+

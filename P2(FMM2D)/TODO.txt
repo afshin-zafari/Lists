@@ -1,0 +1,12 @@
+* OpenMP
+	o Tintin
+		* git push
+		* trace samples
+o Sandy Bridge
+	* architecture 
+	* makefile
+	* port
+	* compile
+	* run test
+	* experiments
+		
