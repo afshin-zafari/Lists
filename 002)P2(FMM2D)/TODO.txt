@@ -1,9 +1,4 @@
 * OpenMP
-	o Tintin
-		* git push
-		* trace samples
-o Sandy Bridge
-	* architecture 
-	* run test
-	* experiments
-		
+	o Sandy Bridge
+		* experiments
+	
