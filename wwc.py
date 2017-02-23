@@ -1,8 +1,8 @@
 import glob as g
 import time as t
 ts=t.strftime("%Y_%m_%d_%H_%M")
-sum_fn=ts+"_SUM.txt"
-tasks_fn=ts+"_TASKS.txt"
+sum_fn="Log/"+ts+"_SUM.txt"
+tasks_fn="Log/"+ts+"_TASKS.txt"
 f_tasks=open(tasks_fn,'wb')
 f_sum = open(sum_fn,'wb')
 def read_file(fn):

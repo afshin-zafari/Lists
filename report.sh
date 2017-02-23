@@ -1,8 +1,8 @@
 #!/bin/bash
 dt=$(date +%Y_%m_%d_%H_%M)
-list="${dt// /_}_SUM.txt"
+list="Log/${dt// /_}_SUM.txt"
 wc -l */*.txt > $list
-tasks="${dt// /_}_TASKS.txt"
+tasks="Log/${dt// /_}_TASKS.txt"
 
 t=$(ls */*.txt)
 for f in $t

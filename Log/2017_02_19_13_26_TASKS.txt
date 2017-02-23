@@ -5,9 +5,18 @@
 002)P2(FMM2D)/TODO.txt
 ============================
 * OpenMP
-	o Sandy Bridge
-		* experiments
-	============================
+	o Tintin
+		* git push
+		* trace samples
+o Sandy Bridge
+	* architecture 
+	* makefile
+	* port
+	* compile
+	* run test
+	* experiments
+		
+============================
 003)P4(FMM3D-DLB-Distrib)/TODO.txt
 ============================
 * PUMA-FM

@@ -15,9 +15,9 @@ def read_file(fn,out):
         tasks[k].append([dt,cnt])
   f.close()
   return out
-l=g.glob('./*SUM.txt')
+l=g.glob('Log/*SUM.txt')
 recs=list()
-tasks['plan'].append([201,400])
+tasks['plan'].append([201,250])
 tasks['plan'].append([901,0])
 for f in l:
   recs=read_file(f,recs)
@@ -32,5 +32,7 @@ for k in ['total','plan']:
   x=[t[0] for t in tasks[k]]
   y=[t[1] for t in tasks[k]]
   ax.plot(x,y)
-
+import time as tt
+ts=tt.strftime("%Y_%m_%d_%H_%M")
+plt.savefig("Log/"+ts+'.png')
 plt.show()
