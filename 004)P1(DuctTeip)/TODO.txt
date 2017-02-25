@@ -1,5 +1,5 @@
 * Applications
-	o FMM 
+	o FMM2D
 * Improving descriptions
 * Rackham
 	o Install

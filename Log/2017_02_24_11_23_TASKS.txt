@@ -1,0 +1,274 @@
+
+================================================================================
+          001)PL\TODO.txt
+================================================================================
+run in cluster
+write report
+	Neural Netwrok, Pattern Recognition, Bishop book, 
+Bishop chapter 
+	read 10p
+	read 10p
+	read 10p
+	read 10p
+	read 10p
+	read 10p
+	read 10p
+
+================================================================================
+          001)Review\TODO.txt
+================================================================================
+discuss with Elisabeth
+================================================================================
+          002)P2(FMM2D)\TODO.txt
+================================================================================
+* OpenMP
+	o Sandy Bridge
+		* experiments
+		* scripts for gathering statistics non-openmp
+		* scripts for gathering statistics openmp
+		* table of comparison btw SuperGlue and OMP
+
+	
+================================================================================
+          003)P4(FMM3D-DLB-Distrib)\TODO.txt
+================================================================================
+* Problem Setup 
+	o Setup (in MATLAB) and Read (in C++)
+		+ points
+		+ boxes
+		+ kappa
+		+ translators
+		+ rerceivings
+* M[Level] or M[Level-1], consistent indexing
+* Partitioning ? 
+
+================================================================================
+          004)P1(DuctTeip)\TODO.txt
+================================================================================
+* Applications
+	o FMM2D
+* Improving descriptions
+* Rackham
+	o Install
+		* PaRSEC
+		* StarPU
+	o Copy files
+		* PaRSEC
+		* StarPU
+		* ScaLAPACK
+		* DuctTeipp
+		* SuperGlue
+		* Experiments scripts
+	o Compile codes
+		* PaRSEC
+		* StarPU
+		* ScaLAPACK
+		* DT
+		* Icc , intel mkl intel mpi
+	o Change run scripts for R account and folders
+
+
+================================================================================
+          021)DT-UTP\TODO.txt
+================================================================================
+o FMM related DuctTeip changes
+	* DTData <--SGMatrix
+	* glbCtx.Data <-- DTData
+	* Turn off mem alloc / mem pool in ductteip
+	* Set memory info for data : addr, Len, leading dim
+	* GetContentAddr and getHeaderAddr to be changed
+	* FMMContext
+	* runKernels: t->run
+	* DTData
+	* Optim Comm
+	* Task type, 
+		* Arg 1: M2M/T, index
+		* Arg 2: S/O, Level, group
+		* Arg 3: S/O, Level, group
+	* Task pack/unpack
+	* SGTaskGemv <-- received task
+	* getDatabyhandle-->use vector vs. list search
+	* when data received, if current version is being used, the data to be copied to a spare memory
+	* Unit Tests
+		o Simple Problem setup
+			* Tree is ok: L, #groups in l, groups in l
+			* Operators are ok, M,T,V : #,MxN , 
+			* sum(abs(M read)) = sum(abs(M expectd))
+			* Points in boxes are ok #Box, #Pi in Bi
+			* Charges are initialzed ok : #X, sum(abs(Xi))=sum(abs(X exp))
+		o Si Oj ownership Works
+		o Task ownership works 
+		o Send and receive data work
+		o Export import task works
+	o Migrated task runs ok
+	o Near field works
+	o Far field works
+	o DLB works
+		* Points or Box distribution?
+		* Input Parameters
+	o DLB
+	o Box min size , L 
+	o Profiling
+	o Output files
+		* Outputs
+			o Work , Comm, Data Memory per process/core
+	o DLB profile
+		* Silent mode: #, sum 
+		* Idle time: trace, sum
+		* Busy time: trace , sum 
+		* exported: sum, trace
+		* imported: trace, sum 
+		* optim migration: #, sum
+		* descrepancy measure: trace
+DT Changes
+	* MPICOmm static
+	* #SUBTASK to be in the config options
+	* Task Cancellation
+	* 2 x 3 x 5 , 3rd level for decrease run-time overhead
+		o Memory  alloc in user program, not in engine
+		o Partitioning should be made easier
+	* Post receive
+	* getDataByHandler() uses vector not list
+	* MPI_DATA_TYPE for data
+	* Visualization
+UTP Changes
+	* SHORTCUT=0 to be removed
+	* Main_* --> main.cpp
+	* MQ Scheduler
+		o Task submission flow
+
+================================================================================
+          021)NLA\TODO.txt
+================================================================================
+Assignment 1
+A2
+A3
+================================================================================
+          030)Kappa\TODO.txt
+================================================================================
+* Chapter 1
+	o Abstract
+	o Introduction
+		* Bridge of ScProg and Para Resources
+		* What is PP? Why is it hard?
+			o different parallel hardware, different approaches 
+			o requires hardware architectures knowldge, it is more technical
+		* What is Task based PP? Why is it good?
+			o define tasks and their in/out data
+			o preserve the sequential logic
+* Chapter 2
+	o Versioning
+	o partitioing
+	o communications
+		* asynch
+		* listener
+		* redundant comm
+		* receiving higher versions than local
+	o hierarchical
+* Chapter 3
+	o Interface
+	o Language binding
+	o Sample applications
+		* Data structure
+		* LUPP
+		* Shallow Water
+		* Iterative
+		* Complex algorithm
+		* Data storage - sparse
+		* Large data
+		* Deep learning
+* Chapter 4
+	o Papers I-IV
+
+================================================================================
+          050)P3(UbiPar)\TODO.txt
+================================================================================
+StarPU
+	Kebnekaise Run Script
+	Check a GPU sample from StarPU
+	StarPU
+		How to define both CPU/GPU kernels in StarPU
+		Run a test
+	SPU Scheduler 
+		Data Define
+		Partition Define
+		Partition Cascade
+		Partition Data
+		Task Define 
+		Task Submit
+		Task Run
+		Task Finished
+Cloud
+	Smog
+		Run instance in the cloud
+		Install, run & configure MQRabbit
+		Script for making the MQRabbit server
+		Python script for simulating message send/receive
+		Git clone, compile, run C++ UTP-MQ
+		Run Test Suite for Messages of:
+			Data Define
+			Partition Define
+			Partition Cascade
+			Partition Data
+			Task Define 
+			Task Submit
+			Task Run
+			Task Finished	
+	TinTin
+		Port MQScheduler code to UTP 
+		Script for making the MQRabbit client
+		Pack Test Messages of:
+			Data Define
+			Partition Define
+			Partition Cascade
+			Partition Data
+			Task Define 
+			Task Submit
+			Task Run
+			Task Finished
+	Kebnekaise
+		Git/clone UTP code
+		Run test package
+	Rackham
+		BLAS library = MKL
+
+
+
+================================================================================
+          100)SE\TODO.txt
+================================================================================
+Headers 
+	.h						   
+	no fwd decl						   
+	include order	Related	C	C++	other libs	my proj	   
+	namespace						   
+	no using namespace xxxx						   
+	terminate with comments							   
+	glolbal func's in namespaces						   
+	no global func's 						      
+	static class type forbidden	b'cos undefined order of ctor dtor					   
+	they should be plain old data types
+	file names
+	variable names
+	namespace
+	function names
+SRC
+	namespace
+	local var's defined close to usage						   
+	all to be initialized	
+	c++ casts, not x = (type) y;
+Unit Tests
+	git clone gtest
+	build gtest
+	test one
+	1st test: DuctTeip and MPI	
+Doxygen
+	create config file
+	doc target in makefile
+	git push it
+	add comments for modules
+	add comments for variables
+	add comments for functions
+	add comments for bodies
+		
+		

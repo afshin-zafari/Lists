@@ -1,4 +1,0 @@
-* OpenMP
-	o Sandy Bridge
-		* experiments
-	

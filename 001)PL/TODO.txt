@@ -1,6 +1,7 @@
+run in cluster
 write report
 	Neural Netwrok, Pattern Recognition, Bishop book, 
-Bisjop chapter 
+Bishop chapter 
 	read 10p
 	read 10p
 	read 10p

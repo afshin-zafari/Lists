@@ -25,6 +25,7 @@ Unit Tests
 	1st test: DuctTeip and MPI	
 Doxygen
 	create config file
+	doc target in makefile
 	git push it
 	add comments for modules
 	add comments for variables

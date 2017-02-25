@@ -1,5 +1,7 @@
 import glob as g
 import time as t
+
+
 ts=t.strftime("%Y_%m_%d_%H_%M")
 sum_fn="Log/"+ts+"_SUM.txt"
 tasks_fn="Log/"+ts+"_TASKS.txt"
@@ -7,6 +9,9 @@ f_tasks=open(tasks_fn,'wb')
 f_sum = open(sum_fn,'wb')
 def read_file(fn):
   f=open(fn,'rb')
+  f_tasks.write('\n'+'='*80+'\n')
+  f_tasks.write(' '*10 + fn+'\n')
+  f_tasks.write('='*80+'\n')
   n=0
   for l in f:
     f_tasks.write(l)
