@@ -27,10 +27,10 @@ tasks['plan'].append([1,300])
 tasks['plan'].append([365-31-31-30-31,0])
 for f in l:
   recs=read_file(f,recs)
-for k in tasks.keys():
-  print k
-  for t in tasks[k]:
-    print t
+#for k in tasks.keys():
+  #print k
+  #for t in tasks[k]:
+    #print t
 
 fig = plt.figure()
 ax=fig.add_subplot(111)
@@ -42,4 +42,4 @@ import time as tt
 ts=tt.strftime("%Y_%m_%d_%H_%M")
 plt.xticks([0,28,59,89,119,149,179,209,239,269],['Feb','March','April','May','June','July','August','Sept.','Oct.','Nov.'])
 plt.savefig("Log/"+ts+'.png')
-plt.show()
+#plt.show()

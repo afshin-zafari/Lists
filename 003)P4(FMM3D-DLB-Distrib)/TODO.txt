@@ -1,8 +1,19 @@
 * Problem Setup 
-	o Setup (in MATLAB) and Read (in C++)
-		+ points
-		+ boxes
-		+ kappa
-		+ translators
-		+ rerceivings
+	o Setup (in MATLAB) 
+	o import/export translators
+	o compute Z_near(k,l)
+	o create V_vect of a Box 
+	o export Z_near
+	o export V_vect
+* complete the body of run() methods
+	o MVP
+	o interolation
+	o green translate
+	o green interpolate
+	o receiving task
+* export tasks
+* arguments of tasks to be copied to local members
+	o MVP task , copy of v to x ( like A= *M)
+	o MVP y = *z
+	o All 5 types * 3 args
 * Partitioning ? 

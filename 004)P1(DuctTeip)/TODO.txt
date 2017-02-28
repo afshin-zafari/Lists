@@ -2,21 +2,13 @@
 	o FMM2D
 * Improving descriptions
 * Rackham
-	o Install
-		* PaRSEC
-		* StarPU
-	o Copy files
-		* PaRSEC
-		* StarPU
-		* ScaLAPACK
-		* DuctTeipp
-		* SuperGlue
+	o Update files
 		* Experiments scripts
-	o Compile codes
+	o Compile codes with MKL BLAS 
 		* PaRSEC
 		* StarPU
 		* ScaLAPACK
 		* DT
 		* Icc , intel mkl intel mpi
-	o Change run scripts for R account and folders
+	o Change run scripts for Rackham account 
 
