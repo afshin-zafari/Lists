@@ -14,7 +14,6 @@ o FMM related DuctTeip changes
 		* Arg 3: S/O, Level, group
 	* Task pack/unpack
 	* SGTaskGemv <-- received task
-	* getDatabyhandle-->use vector vs. list search
 	* when data received, if current version is being used, the data to be copied to a spare memory
 	* Unit Tests
 		o Simple Problem setup
@@ -47,13 +46,18 @@ o FMM related DuctTeip changes
 		* imported: trace, sum 
 		* optim migration: #, sum
 		* descrepancy measure: trace
-DT Changes
+o General 
+	* not send listeners
 	* MPICOmm static
 	* #SUBTASK to be in the config options
 	* Task Cancellation
 	* 2 x 3 x 5 , 3rd level for decrease run-time overhead
 		o Memory  alloc in user program, not in engine
 		o Partitioning should be made easier
+		o A-> A1-A4, t1,t2,t3,t4 : t1-->t3 + t2-->t4
+		  submit t1-t4. t1,t2 starts running and submit sub tasks
+		  when t1 finishes, t2 gets ready and submit the next set of sub tasks
+		  ==>the number of sub tasks is always bound to sub-tasks of ti and tj without killing the parallelism(no barrier)
 	* Post receive
 	* getDataByHandler() uses vector not list
 	* MPI_DATA_TYPE for data
@@ -65,10 +69,25 @@ DT Changes
 			- idle/busy of threads during whole execution
 			- idle/busy of a proc ....
 			- communication of proc's
-			- task distribution of proc's for DLB)
+			- task distribution of proc's for DLB
 			- descrepancy of load
 UTP Changes
 	* SHORTCUT=0 to be removed
 	* Main_* --> main.cpp
 	* MQ Scheduler
 		o Task submission flow
+	* Cloud/Smog
+		Run instance in the cloud
+		Install, run & configure MQRabbit
+		Script for making the MQRabbit server
+		Python script for simulating message send/receive
+		Git clone, compile, run C++ UTP-MQ
+		Run Test Suite for Messages of:
+			Data Define
+			Partition Define
+			Partition Cascade
+			Partition Data
+			Task Define 
+			Task Submit
+			Task Run
+			Task Finished	

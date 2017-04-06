@@ -1,14 +1,16 @@
 * Applications
 	o FMM2D
-* Improving descriptions
+	o Shallow Water
+		* source of Matlab setup
+		* source of SuperGlue imp.
+		* implement data structures in DT
+		* write code for time-stepping
+		* run and test
 * Rackham
-	o Update files
-		* Experiments scripts
+	o Update Experiments scripts
 	o Compile codes with MKL BLAS 
 		* PaRSEC
 		* StarPU
 		* ScaLAPACK
-		* DT
-		* Icc , intel mkl intel mpi
-	o Change run scripts for Rackham account 
 
+* Triolith NSC allocation

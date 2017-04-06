@@ -1,19 +1,27 @@
 * Problem Setup 
-	o Setup (in MATLAB) 
-	o import/export translators
-	o compute Z_near(k,l)
-	o create V_vect of a Box 
+	o Setup (in MATLAB)
+		+ Points = ...
+		+ Boxes = <--(points)
+		+ Tree = <--(box) 
+		+ Children = <-- box
+		+ Far Boxes = <-- box
+		+ Near Boxes = <-- box
+		+ Kappa= <--(Level) 
+		+ Translator ( kappa, level, X ) 
+		+ Z_near
+		+ Far field
+		+ Receiving
+		+ I vect		
+	o import/export 
+		+ translators
+	o create V_vect of a Box, memory allocate
 	o export Z_near
 	o export V_vect
 * complete the body of run() methods
 	o MVP
-	o interolation
+	o interpolation
 	o green translate
 	o green interpolate
 	o receiving task
-* export tasks
-* arguments of tasks to be copied to local members
-	o MVP task , copy of v to x ( like A= *M)
-	o MVP y = *z
-	o All 5 types * 3 args
+* A good prolem setup to be prepared
 * Partitioning ? 

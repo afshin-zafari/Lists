@@ -43,3 +43,4 @@ ts=tt.strftime("%Y_%m_%d_%H_%M")
 plt.xticks([0,28,59,89,119,149,179,209,239,269],['Feb','March','April','May','June','July','August','Sept.','Oct.','Nov.'])
 plt.savefig("Log/"+ts+'.png')
 #plt.show()
+print "Done."
