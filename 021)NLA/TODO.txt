@@ -1,6 +1,6 @@
-* Assignment 1
+# Assignment 1
 	o first run
 	o replace the preconditioner, rerun, doo the results change?
 	o make the graphs better, font size, line width etc.
-A2 ?
-A3 ?
+#A2 ?
+#A3 ?

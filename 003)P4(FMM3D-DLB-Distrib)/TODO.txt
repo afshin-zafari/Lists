@@ -1,21 +1,14 @@
-* Near field tasks, distribute, todo 9
-* todo list 
-	o 2-4
-	o 5-8
-	o 9-13
-* parameters file, read/import, todo 1
-* export box data and import in matlab, depict them for debugging purposes only
-* Z should be constructed as Dense, but read as sparse !!!
-* Check the Using operators in Matlab scripts: Interpolations and Translations
-* Result validation :  export I_vect/V_vect
-* profile the hollow tasks statistics, 
-	o communications, per level,box,....
-	o computations, per level , box, ...
-* complete the body of run() methods
-	o MVP
-	o interpolation
-	o green translate
-	o green interpolate
-	o receiving task
+* test import new Z
+* rcvTask::run
+* xlt_task::run
+* rcv_task::run
+* nfl_task::run
+* c2p_task::run
+* p2c_task::run
+* ffl_task::run
+# F,R,Z ctor (m,n)
 * Data ownerships of F and G and V in dif levels, shared and local ones
 * multiple ownership in DuctTeip ,  
+# Check the Using operators in Matlab scripts: Interpolations and Translations
+* Result validation :  export I_vect/V_vect
+* export box data and import in matlab, depict them for debugging purposes only

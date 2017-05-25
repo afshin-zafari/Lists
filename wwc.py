@@ -14,6 +14,8 @@ def read_file(fn):
   f_tasks.write('='*80+'\n')
   n=0
   for l in f:
+    if l.strip().startswith('#'):
+      n -= 1
     f_tasks.write(l)
     n += 1
   

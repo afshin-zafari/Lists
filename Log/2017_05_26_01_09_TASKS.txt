@@ -1,0 +1,130 @@
+
+================================================================================
+          003)P4(FMM3D-DLB-Distrib)\TODO.txt
+================================================================================
+* test import new Z
+* rcvTask::run
+* xlt_task::run
+* rcv_task::run
+* nfl_task::run
+* c2p_task::run
+* p2c_task::run
+* ffl_task::run
+# F,R,Z ctor (m,n)
+* Data ownerships of F and G and V in dif levels, shared and local ones
+* multiple ownership in DuctTeip ,  
+# Check the Using operators in Matlab scripts: Interpolations and Translations
+* Result validation :  export I_vect/V_vect
+* export box data and import in matlab, depict them for debugging purposes only
+
+================================================================================
+          004)P1(DuctTeip)\TODO.txt
+================================================================================
+# Applications
+	o Shallow Water
+		* data distribution
+		* tasks in DuctTeip engine should work
+		* write code for time-stepping
+		* run and test
+# Rackham
+	o Update Experiments scripts
+#	o Compile codes with MKL BLAS 
+		* PaRSEC
+		* StarPU
+		* ScaLAPACK
+
+* Triolith NSC allocation
+================================================================================
+          021)DT-UTP\TODO.txt
+================================================================================
+# FMM related DuctTeip changes
+	* DTData <--SGMatrix
+	* glbCtx.Data <-- DTData
+	* Turn off mem alloc / mem pool in ductteip
+	* Set memory info for data : addr, Len, leading dim
+	* GetContentAddr and getHeaderAddr to be changed
+	* FMMContext
+	* runKernels: t->run
+	* DTData
+	* Optim Comm
+	* Task pack/unpack
+#	* Unit Tests
+#		o Simple Problem setup
+			* Tree is ok: L, #groups in l, groups in l
+			* Operators are ok, M,T,V : #,MxN , 
+			* sum(abs(M read)) = sum(abs(M expectd))
+			* Points in boxes are ok #Box, #Pi in Bi
+			* Charges are initialzed ok : #X, sum(abs(Xi))=sum(abs(X exp))
+		o Task ownership works 
+		o Send and receive data work
+		o Export import task works
+	o Migrated task runs ok
+	o DLB
+	o Profiling
+#	o Output files
+#		* Outputs
+			o Work , Comm, Data Memory per process/core
+#	o DLB profile
+		* Silent mode: #, sum 
+		* Idle time: trace, sum
+		* Busy time: trace , sum 
+		* exported: sum, trace
+		* imported: trace, sum 
+		* optim migration: #, sum
+		* descrepancy measure: trace
+	* getDataByHandler() uses vector not list
+#UTP Changes
+	* SHORTCUT=0 to be removed
+
+================================================================================
+          021)NLA\TODO.txt
+================================================================================
+# Assignment 1
+	o first run
+	o replace the preconditioner, rerun, doo the results change?
+	o make the graphs better, font size, line width etc.
+#A2 ?
+#A3 ?
+================================================================================
+          030)Kappa\TODO.txt
+================================================================================
+# Chapter 1
+	o Abstract
+	o Introduction
+		* Bridge of ScProg and Para Resources
+#		* What is PP? Why is it hard?
+			o different parallel hardware, different approaches 
+			o requires hardware architectures knowldge, it is more technical
+#		* What is Task based PP? Why is it good?
+			o define tasks and their in/out data
+			o preserve the sequential logic
+# Chapter 2
+	o Versioning
+	o partitioing
+#	o communications
+		* asynch
+		* listener
+		* redundant comm
+		* receiving higher versions than local
+	o hierarchical
+# Chapter 3
+	o Interface
+	o Language binding
+	o Sample applications
+		* Data structure
+		* LUPP
+		* Shallow Water
+		* Iterative
+		* Complex algorithm
+		* Data storage - sparse
+* Chapter 4
+	o Papers I-IV
+
+================================================================================
+          050)P3(UbiPar)\TODO.txt
+================================================================================
+  # Rackham
+	git get
+	compile
+	run
+	experiments 	

@@ -1,12 +1,12 @@
-* Applications
+# Applications
 	o Shallow Water
 		* data distribution
 		* tasks in DuctTeip engine should work
 		* write code for time-stepping
 		* run and test
-* Rackham
+# Rackham
 	o Update Experiments scripts
-	o Compile codes with MKL BLAS 
+#	o Compile codes with MKL BLAS 
 		* PaRSEC
 		* StarPU
 		* ScaLAPACK

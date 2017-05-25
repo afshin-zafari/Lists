@@ -1,23 +1,23 @@
-* Chapter 1
+# Chapter 1
 	o Abstract
 	o Introduction
 		* Bridge of ScProg and Para Resources
-		* What is PP? Why is it hard?
+#		* What is PP? Why is it hard?
 			o different parallel hardware, different approaches 
 			o requires hardware architectures knowldge, it is more technical
-		* What is Task based PP? Why is it good?
+#		* What is Task based PP? Why is it good?
 			o define tasks and their in/out data
 			o preserve the sequential logic
-* Chapter 2
+# Chapter 2
 	o Versioning
 	o partitioing
-	o communications
+#	o communications
 		* asynch
 		* listener
 		* redundant comm
 		* receiving higher versions than local
 	o hierarchical
-* Chapter 3
+# Chapter 3
 	o Interface
 	o Language binding
 	o Sample applications
@@ -27,7 +27,5 @@
 		* Iterative
 		* Complex algorithm
 		* Data storage - sparse
-		* Large data
-		* Deep learning
 * Chapter 4
 	o Papers I-IV
