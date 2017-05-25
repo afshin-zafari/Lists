@@ -1,9 +1,7 @@
 * Applications
-	o FMM2D
 	o Shallow Water
-		* source of Matlab setup
-		* source of SuperGlue imp.
-		* implement data structures in DT
+		* data distribution
+		* tasks in DuctTeip engine should work
 		* write code for time-stepping
 		* run and test
 * Rackham

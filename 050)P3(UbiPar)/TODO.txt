@@ -1,27 +1,5 @@
-	Kebnekaise
-		port spu test codee to spu_hpp/cpp file					
-			Data Define
-			Partition Define
-			Partition Cascade
-			Partition Data
-			Task Define 
-			Task Submit
-			Task Run
-			Task Finished
-		Dispatcher run_on_gpu
-		operation ::run_on_gpu
-		cuBLAS
-		BLAS lib = Intel MKL
-		utrsm
-		upotrf
-		usyrk
-		experiments 
-	Rackham
-		git get
-		compile
-		run
-		experiments 	
-	Ductteip 
-		eng_*.cpp files to be added to the make filee in UTP folders
-
-
+Rackham
+	git get
+	compile
+	run
+	experiments 	

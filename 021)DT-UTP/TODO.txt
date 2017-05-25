@@ -73,21 +73,3 @@ o General
 			- descrepancy of load
 UTP Changes
 	* SHORTCUT=0 to be removed
-	* Main_* --> main.cpp
-	* MQ Scheduler
-		o Task submission flow
-	* Cloud/Smog
-		Run instance in the cloud
-		Install, run & configure MQRabbit
-		Script for making the MQRabbit server
-		Python script for simulating message send/receive
-		Git clone, compile, run C++ UTP-MQ
-		Run Test Suite for Messages of:
-			Data Define
-			Partition Define
-			Partition Cascade
-			Partition Data
-			Task Define 
-			Task Submit
-			Task Run
-			Task Finished	

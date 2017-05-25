@@ -6,6 +6,8 @@ tasks={'P1':list(),'P2':list(),'P4':list(),'total':list(),
 def read_file(fn,out):
   fns=fn.split('_')
   dt=int(fns[1])*100+int(fns[2])#MMDD
+  if dt >425:
+    pass 
   d1=dtm.date(2017,02,01)
   d2=dtm.date(2017,dt/100,dt%100)
   d3=d2-d1
@@ -37,10 +39,12 @@ ax=fig.add_subplot(111)
 for k in ['total','plan']:
   x=[t[0] for t in tasks[k]]
   y=[t[1] for t in tasks[k]]
-  ax.plot(x,y)
+  ax.plot(x,y)  
 import time as tt
 ts=tt.strftime("%Y_%m_%d_%H_%M")
 plt.xticks([0,28,59,89,119,149,179,209,239,269],['Feb','March','April','May','June','July','August','Sept.','Oct.','Nov.'])
+plt.grid(True)
 plt.savefig("Log/"+ts+'.png')
+
 #plt.show()
 print "Done."

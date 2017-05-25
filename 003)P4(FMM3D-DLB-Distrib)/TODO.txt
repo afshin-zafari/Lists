@@ -1,27 +1,21 @@
-* Problem Setup 
-	o Setup (in MATLAB)
-		+ Points = ...
-		+ Boxes = <--(points)
-		+ Tree = <--(box) 
-		+ Children = <-- box
-		+ Far Boxes = <-- box
-		+ Near Boxes = <-- box
-		+ Kappa= <--(Level) 
-		+ Translator ( kappa, level, X ) 
-		+ Z_near
-		+ Far field
-		+ Receiving
-		+ I vect		
-	o import/export 
-		+ translators
-	o create V_vect of a Box, memory allocate
-	o export Z_near
-	o export V_vect
+* Near field tasks, distribute, todo 9
+* todo list 
+	o 2-4
+	o 5-8
+	o 9-13
+* parameters file, read/import, todo 1
+* export box data and import in matlab, depict them for debugging purposes only
+* Z should be constructed as Dense, but read as sparse !!!
+* Check the Using operators in Matlab scripts: Interpolations and Translations
+* Result validation :  export I_vect/V_vect
+* profile the hollow tasks statistics, 
+	o communications, per level,box,....
+	o computations, per level , box, ...
 * complete the body of run() methods
 	o MVP
 	o interpolation
 	o green translate
 	o green interpolate
 	o receiving task
-* A good prolem setup to be prepared
-* Partitioning ? 
+* Data ownerships of F and G and V in dif levels, shared and local ones
+* multiple ownership in DuctTeip ,  
